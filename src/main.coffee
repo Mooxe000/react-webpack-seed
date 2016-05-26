@@ -5,6 +5,7 @@ echo = -> console.log arguments[0]
   cfxify
   render
   Comps
+  Styl
 } = require './cfxRW.coffee'
 
 {
@@ -12,14 +13,18 @@ echo = -> console.log arguments[0]
   h1
 } = Comps
 
-{ Router, Route, Link } = require 'react-router'
+# { Router, Route, Link } = require 'react-router'
+
+styles =
+  hello:
+    color: 'red'
 
 Hello = cfx
 
   render: ->
     div {}
     ,
-      h1 {}
+      h1 style: styles.hello
       , 'Hello React!!!'
 
 render (Hello {})

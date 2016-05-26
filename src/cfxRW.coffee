@@ -5,6 +5,9 @@ React = require 'react'
 } = React
 { render } = require 'react-dom'
 
+Radium = require 'radium'
+Styl = Radium.Style
+
 cfxify = (e) ->
   (args...) -> createElement.apply @
   , [ e ].concat args
@@ -24,5 +27,6 @@ module.exports = {
   render
   cfx
   cfxify
+  Styl
   Comps
 }

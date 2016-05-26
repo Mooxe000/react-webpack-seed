@@ -14,6 +14,7 @@
     "dev": "webpack-dev-server --inline --hot --content-base dist --config webpack/dev.conf.coffee"
   },
   "dependencies": {
+    "radium": "^0.17.1",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
     "react-router": "^2.4.1"
