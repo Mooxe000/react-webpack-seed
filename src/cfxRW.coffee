@@ -6,14 +6,15 @@ React = require 'react'
 { render } = require 'react-dom'
 
 Radium = require 'radium'
-Styl = Radium.Style
 
 cfxify = (e) ->
   (args...) -> createElement.apply @
   , [ e ].concat args
 cfx = ->
-  cfxify createClass.apply @
+  cfxify Radium createClass.apply @
   , arguments
+
+# Style = cfxify Radium.Style
 
 Comps = {}
 for tag in [
@@ -27,6 +28,5 @@ module.exports = {
   render
   cfx
   cfxify
-  Styl
   Comps
 }

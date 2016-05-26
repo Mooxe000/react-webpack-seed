@@ -5,7 +5,6 @@ echo = -> console.log arguments[0]
   cfxify
   render
   Comps
-  Styl
 } = require './cfxRW.coffee'
 
 {
@@ -18,6 +17,8 @@ echo = -> console.log arguments[0]
 styles =
   hello:
     color: 'red'
+    ':hover':
+      color: 'green'
 
 Hello = cfx
 
