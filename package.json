@@ -1,0 +1,45 @@
+{
+  "name": "react-webpack-seed",
+  "description": "react webpack seed",
+  "author": ":FooTearth <footearth@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mooxe000/react-webpack-seed.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mooxe000/react-webpack-seed/issues"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --inline --hot --content-base dist --config webpack/dev.conf.coffee"
+  },
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-router": "^2.4.1"
+  },
+  "_devDependencies": {
+    "stylus": "^0.54.5",
+    "stylus-loader": "^2.1.0"
+  },
+  "devDependencies": {
+    "build-module-task": "0.0.2",
+    "coffee-loader": "^0.7.2",
+    "coffee-script": "^1.10.0",
+    "cson": "^3.0.2",
+    "css-loader": "^0.23.1",
+    "ddeyes": "0.0.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "html-webpack-plugin": "^2.17.0",
+    "jade": "^1.11.0",
+    "jade-loader": "^0.8.0",
+    "json-loader": "^0.5.4",
+    "lodash": "^4.13.1",
+    "style-loader": "^0.13.1",
+    "template-html-loader": "0.0.3",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
