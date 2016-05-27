@@ -26,7 +26,7 @@ module.exports =
       }
       {
         test: /\.coffee$/
-        loader: 'coffee-loader'
+        loaders: ['react-hot', 'coffee-loader']
         exclude: /node_modules/
       }
       # {
